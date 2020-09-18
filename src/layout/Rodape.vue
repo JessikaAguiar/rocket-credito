@@ -1,7 +1,7 @@
 <template>
-    <div class="rodape">
+    <b-container fluid="xg" class="rodape bg-dark fixed-bottom">
         Footer
-    </div>
+    </b-container>
 </template>
 
 <script>
@@ -11,5 +11,7 @@ export default {
 </script>
 
 <style lang="css">
-
+    .rodape{
+        height: 100px;
+    }
 </style>
