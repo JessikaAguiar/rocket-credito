@@ -1,0 +1,48 @@
+@font-face {
+    font-family: inter-regular;
+    src: url(../font/Inter-Regular-slnt=0.ttf);
+}
+
+@font-face {
+    font-family: inter-black;
+    src: url(../font/Inter-Black-slnt=0.ttf);
+}
+
+@font-face {
+    font-family: inter-bold;
+    src: url(../font/Inter-Bold-slnt=0.ttf);
+}
+
+@font-face {
+    font-family: inter-extrabold;
+    src: url(../font/Inter-ExtraBold-slnt=0.ttf);
+}
+* {
+    font-family: inter-regular;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #474D4F;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: #474D4F;
+    border-bottom: 1.5px solid #FDCB6E;
+}
+.card {
+    text-align: left;
+}
+.card-text{
+    height: 200px;
+    font-size: 15px;
+}
+.btn-card {
+    background-color: white;
+    color: #10206A;
+    border-color: rgb(134, 130, 130);
+    border-radius: 10px;
+    width: 106px;
+}
+.btn-card:focus, .btn-card:hover {
+    background-color: #10206A;
+    color: #ffffff;
+}

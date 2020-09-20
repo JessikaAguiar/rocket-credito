@@ -1,7 +1,7 @@
 <template>
-    <b-container fluid="xg">
-        <b-navbar toggleable="lg" type="dark" variant="info" fixed="top" class="mb-5">
-            <b-navbar-brand href="#">NavBar</b-navbar-brand>
+    <b-container fluid="xg" class="mb-5">
+        <b-navbar toggleable="lg" fixed="top" type="dark" class="mb-5">
+            <b-navbar-brand href="#"><img :src="require('../assets/img/logo.png')" class="img-fluid logo-nav"></b-navbar-brand>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -24,5 +24,15 @@ export default {
 <style lang="css">
     .navbar {
         padding: 0;
+        background-color: #ffffff;
+        color: #474D4F;
+    }
+    .logo-nav {  
+        width: 250px;
+    }
+    @media (max-width: 768px) {
+      .navbar {
+        background-color: #10206A;
+      }
     }
 </style>

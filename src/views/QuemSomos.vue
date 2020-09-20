@@ -1,5 +1,5 @@
 <template>
-  <div class="quemsomos">
+  <div class="quemsomos" id="inicio">
     Quem somos
   </div>
 </template>
@@ -14,11 +14,6 @@ export default {
 }
 </script>
 
-<style type="css">
-  .home{
-    margin-top: 70px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
+<style lang="css">
+
 </style>
