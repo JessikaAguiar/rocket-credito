@@ -10,8 +10,8 @@ import Popper from 'popper.js'
 import VueRouter from 'vue-router'
 import './assets/css/style.css'
 
-import inputEstilizado from './components/globais/Input'
-Vue.component(inputEstilizado)
+import rocketInput from './components/globais/RocketInput'
+Vue.component(rocketInput)
 
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
@@ -24,5 +24,6 @@ Vue.config.productionTip = false
 new Vue({
   router,
   store,
+  rocketInput,
   render: h => h(App)
 }).$mount('#app')

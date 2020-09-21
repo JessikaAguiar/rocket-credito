@@ -84,7 +84,7 @@
         <b-row>
           <b-col class="text-center centralizando-texto">
             <h3 class="espaco-entrelinhas">
-              “Descubra as vantagens de pedir um empréstimo conosco e aproveitar as menores taxas e menos burocracia.”
+              “Descubra as vantagens de pedir um empréstimo conosco e aproveitar as menores taxas e menos burocracia.”<br/>
               <b-button href="#" variant="primary" class="btn-card mt-4">Saiba +</b-button>
             </h3>          
           </b-col>
@@ -94,13 +94,73 @@
         </b-row>
       </b-container>
     </section>
+
     <section class="resultados mb-5">
       <h1 class="mb-5">Conheça nossos Resultados</h1>
       <b-container>
         <b-row>
-          <b-col></b-col>
-          <b-col></b-col>
-          <b-col></b-col>
+          <b-col>
+            <b-icon icon="hand-index-thumb" rotate="180" font-scale="3"></b-icon>
+            
+            <div>
+              
+              <b-button v-b-toggle="'collapse-a'" class="btn-result"></b-button>
+
+              
+              <b-button v-b-toggle="'collapse-b'" class="btn-result"></b-button>
+
+             
+              <b-button v-b-toggle="'collapse-c'" class="btn-result"></b-button>
+
+              
+              <b-container>
+                <b-row>
+                  <b-col>
+                    <b-collapse id="collapse-a" class="mt-2">
+                      <b-card class="card-hover">
+                        <div class="text-center mb-5">
+                          <h4 class="card-title">Capital Liberado</h4>
+                          <h2>100.000.000</h2>
+                          <p class="texto-rocket">Praticidade e comodidade para pedir seu Empréstimo. Peça pelo computador ou celular.</p>
+                          <div>
+                            <b-form-rating id="rating-inline" inline v-model="value" color="#ff8800"></b-form-rating>
+                          </div>
+                        </div>
+                      </b-card>
+                    </b-collapse>
+                  </b-col>
+                  <b-col>
+                    <b-collapse id="collapse-b" class="mt-2">
+                      <b-card class="card-hover">
+                        <div class="text-center mb-5">
+                          <h4 class="card-title">Sonhos Realizados</h4>
+                          <h2>+50.000</h2>
+                          <p class="texto-rocket">Praticidade e comodidade para pedir seu Empréstimo. Peça pelo computador ou celular.</p>
+                          <div>
+                            <b-form-rating id="rating-inline" inline v-model="value2" color="#ff8800"></b-form-rating>
+                          </div>
+                        </div>
+                      </b-card>
+                    </b-collapse>
+                  </b-col>
+                  <b-col>
+                    <b-collapse id="collapse-c" class="mt-2">
+                        <b-card class="card-hover">
+                        <div class="text-center mb-5">
+                          <h4 class="card-title"> Emprestimos e Investimentos</h4>
+                          <h2>+100.000</h2>
+                          <p class="texto-rocket">Descubra as vantagens de pedir um empréstimo conosco e aproveitar as menores taxas e menos burocracia.</p>
+                          <div>
+                            <b-form-rating id="rating-inline" inline v-model="value3" color="#ff8800"></b-form-rating>
+                          </div>
+                        </div>
+                      </b-card>
+                      </b-collapse>
+                    </b-col>
+                </b-row>
+              </b-container>
+          </div>
+          </b-col>
         </b-row>
       </b-container>
     </section>
@@ -112,17 +172,20 @@
 
 export default {
   name: 'Home',
-  
+  data() {
+      return {
+        value: 0,
+        value2: 0,
+        value3: 0,
+        value4: 10000
+      }
+    }
 }
 </script>
 
 <style lang="css">
   .home {
     padding-top: 90px;
-  }
-  h1, h3 {
-    font-family: inter-black;
-    color: #2D3436;
   }
   .espaco-entrelinhas {
     line-height: 1.6;
@@ -131,7 +194,6 @@ export default {
     width: 520px;
     height: 410px;
   }
-  
   .centralizando-texto {
     display: flex;
     align-items: center;
@@ -152,5 +214,21 @@ export default {
   .purple{
     color: #6C5CE7;
   }
+  .btn-result{
+    background-color: #FDDE34;
+    width: 100px;
+  }
+  
+  @media (max-width: 768px) {
+      .img-conteudo {
+        width: 420px;
+        height: 410px;
+      }
+      .resultados {
+        display: none;
+      }
+      
+    }
+
   
 </style>

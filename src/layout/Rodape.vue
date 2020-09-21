@@ -1,12 +1,16 @@
 <template>
-    <b-container fluid="xg" class="rodape">
+    <b-container fluid="xl" class="rodape">
          <b-row class="text-center">
             <b-col>
-                <a href="#inicio"><img :src="require('../assets/img/foguete1.png')" class="logo-footer"></a>
+                <div class="rocket-logo">
+                    <a href="#inicio">
+                        <span class="logo-footer"></span>
+                    </a>
+                </div>
             </b-col>
         </b-row>
-         <b-row class="p-1 mt-2">
-            <b-col class="m-1">
+        <b-row>
+            <b-col>
                 <b-container>
                     <b-row>
                         <b-col>
@@ -47,25 +51,86 @@
                             </div>
                             <div class="mensagem">
                                 <h6 class="mb-4">ENVIE UMA MENSAGEM, LOGO RESPONDEREMOS</h6>
-                                <form action="#">
-                                   
-                                    Nome
-                                    email
-                                    mensagem
-                                    button
-                                </form>
+                                <b-form>
+                                    <b-container>
+                                        <b-row>
+                                            <b-col>
+                                                <b-form-group id="input-group-1" label-for="input-1">
+                                                    <b-form-input
+                                                    id="input-1"
+                                                    v-model="form.name"
+                                                    required
+                                                    placeholder="Nome"
+                                                    class="input-rocket"
+                                                    ></b-form-input>
+                                                </b-form-group>
+                                            </b-col>
+                                            <b-col>
+                                                <b-form-group id="input-group-2" label-for="input-2">
+                                                    <b-form-input
+                                                        id="input-2"
+                                                        v-model="form.email"
+                                                        type="email"
+                                                        required
+                                                        placeholder="Email"
+                                                        class="input-rocket"
+                                                        ></b-form-input>
+                                                </b-form-group>
+                                            </b-col>
+                                        </b-row>
+                                        <b-row>
+                                            <b-col>
+                                                <b-form-group id="input-group-3" label-for="input-3">
+                                                    <b-form-textarea
+                                                        id="textarea"
+                                                        v-model="text"
+                                                        placeholder="Sua mensagem.."
+                                                        rows="2"
+                                                        max-rows="2"
+                                                        class="input-rocket"
+                                                    ></b-form-textarea>
+                                                </b-form-group>
+                                            </b-col>
+                                            <b-col>
+                                                <b-button type="submit" class="btn-rocket-enviar">Enviar</b-button>
+                                            </b-col>
+                                        </b-row>
+                                    </b-container>
+                                </b-form>
+                            </div>
+                        </b-col>
+                    </b-row>
+                    <b-row>
+                        <b-col>
+                            <p class="copy-rodape">Copyright © 2020 RocketCrédito - Brasil</p>
+                            <div class="visualizacao">
+                                <h4 class="email-rodape">ola@rocketcredito.com</h4>
+                                <div class="d-flex sociais">
+                                    <a href="#"><img :src="require('../assets/img/face-with.svg')" class="logo-redes"></a>
+                                    <a href="#"><img :src="require('../assets/img/linke-with.svg')" class="logo-redes"></a>
+                                    <a href="#"><img :src="require('../assets/img/insta-with.svg')" class="logo-redes"></a>
+                                    <a href="#"><img :src="require('../assets/img/twit-with.svg')" class="logo-redes"></a>
+                                </div>
                             </div>
                         </b-col>
                     </b-row>
                 </b-container>
             </b-col>
-         </b-row>
+        </b-row>
     </b-container>
 </template>
-
 <script>
+
 export default {
     name: 'rodape',
+    data() {
+        return {
+            form: {
+            email: '',
+            name: '',
+            }
+        }
+    }
 }
 </script>
 
@@ -74,9 +139,21 @@ export default {
         /* background-color: #10206A; */
         color: #ffffff;
     }
+    .rocket-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .logo-footer {
+        display: block;
+        background-image: url('~@/assets/img/foguete1.png');
+        background-repeat: no-repeat;
+        background-size: 102px 115px;
         width: 102px;
         height: 115px;
+    }
+    .logo-footer:hover, .logo-footer:focus{
+        background-image: url('~@/assets/img/foguete2.png');
     }
     .siga-nos, .informacoes, .entreemcontato, .mensagem {
         font-family: inter-extrabold;
@@ -103,8 +180,44 @@ export default {
         text-decoration: underline;
         color: #2D3436;
     }
-    .email-rodape {
+    .email-rodape{
         font-family: inter-bold;
         color: #10206A;
+    }
+    .copy-rodape {
+        text-align: center;
+    }
+    .visualizacao {
+        display: none;
+        text-align: center;
+    }
+    
+    
+    @media (max-width: 768px) {
+        .rodape {
+            background-color: #10206A;
+        }
+        .siga-nos, .informacoes, .entreemcontato, .mensagem  {
+            display: none;
+        }
+        .copy-rodape{
+            color: #ffffff;
+        }
+        .visualizacao {
+           display: block;
+           
+        }
+        .visualizacao h4{
+            color: #ffffff;
+        }
+        .sociais {
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .logo-footer {
+            background-image: url('~@/assets/img/foguete2.png');
+        }
+        
     }
 </style>

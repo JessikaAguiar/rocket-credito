@@ -31,8 +31,8 @@ export default {
         width: 250px;
     }
     @media (max-width: 768px) {
-      .navbar {
-        background-color: #10206A;
-      }
+        .navbar {
+            background-color: #10206A;
+        }
     }
 </style>

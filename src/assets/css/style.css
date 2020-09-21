@@ -20,7 +20,15 @@
 * {
     font-family: inter-regular;
 }
-
+h1, h3 {
+    font-family: inter-black;
+    color: #2D3436;
+}
+.texto-rocket {
+    line-height: 2.6;
+    margin: 20px;
+    font-size: 18px;
+  }
 .navbar-dark .navbar-nav .nav-link {
     color: #474D4F;
 }
@@ -34,8 +42,10 @@
 .sem-borda {
     border: none;
 }
+.card-hover:hover{
+    border: 2px solid #FDDE34;
+  }
 .card-text{
-    height: 200px;
     font-size: 15px;
 }
 .btn-card {
@@ -48,4 +58,36 @@
 .btn-card:focus, .btn-card:hover {
     background-color: #10206A;
     color: #ffffff;
+}
+.btn-result{
+    background-color: #FDCB6E;
+    border-color: #FDCB6E;
+}
+.btn-result:hover{
+    background-color: #FDCB6E;
+    border-color: #FDCB6E;
+}
+.input-rocket {
+    background-color: #C2C2C2;
+    color: #2D3436;
+    border-radius: 16px;
+}
+.btn-rocket-enviar {
+    background-color: #10206A;
+    height: 82%;
+    width: 52%;
+    border-radius: 17px;
+}
+.input-rocket:hover {
+    background-color: #ffffff;
+}
+@media (max-width: 768px) {
+    .navbar-dark .navbar-nav .nav-link {
+        color: #ffffff;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+        color: #ffffff;
+        border-bottom: 1.5px solid #FDCB6E;
+        
+    }
 }
