@@ -17,7 +17,7 @@
       </b-container>
     </section>
 
-    <b-button class="visualizacao btn">SIMULE SEM COMPROMISSO</b-button>
+    <b-button class="visualizacao-a btn">SIMULE SEM COMPROMISSO</b-button>
 
     <section class="comofunciona mb-5">
       <h1 class="mb-5">Como Funciona?</h1>
@@ -231,6 +231,12 @@ export default {
         display: none;
       }
       
+  }
+   @media (max-width: 375px) {
+      .img-conteudo {
+        width: 290px;
+        height: 210px;
+      }
     }
 
   

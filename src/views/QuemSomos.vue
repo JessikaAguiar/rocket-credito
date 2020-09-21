@@ -5,7 +5,7 @@
       <b-container>
         <b-row>
           <b-col class="centralizando-texto">
-             <img :src="require('../assets/img/quemsomos-topo.png')" class="img-conteudo">
+             <img :src="require('../assets/img/quemsomos-topo.png')" class="img-fluid">
           </b-col>
         </b-row>
         <b-row>
@@ -22,10 +22,10 @@
                 </b-col>
               </b-row>
               <b-row>
-                <b-col>
+              <b-col sm="6">
                   <p class="texto-rocket">Basta acessar o <a href="#">link</a> e digitar o nome da empresa ou o CNPJ no campo de buscas.</p>
                 </b-col>
-                <b-col>
+                <b-col sm="6">
                   <img :src="require('../assets/img/banco_central.png')" class="img-banco">
                 </b-col>
               </b-row>
@@ -112,4 +112,5 @@ export default {
     width: 200px;
     font-size: 18px;
   }
+
 </style>

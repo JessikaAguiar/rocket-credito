@@ -1,7 +1,7 @@
 <template>
     <b-container fluid="xl" class="rodape">
          <b-row class="text-center">
-            <b-col>
+            <b-col sm="4">
                 <div class="rocket-logo">
                     <a href="#inicio">
                         <span class="logo-footer"></span>
@@ -193,9 +193,10 @@ export default {
     }
     
     
-    @media (max-width: 768px) {
+    @media (max-width: 768px){
         .rodape {
             background-color: #10206A;
+            
         }
         .siga-nos, .informacoes, .entreemcontato, .mensagem  {
             display: none;
@@ -218,6 +219,6 @@ export default {
         .logo-footer {
             background-image: url('~@/assets/img/foguete2.png');
         }
-        
     }
+    
 </style>

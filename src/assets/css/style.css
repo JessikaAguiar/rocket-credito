@@ -81,7 +81,7 @@ h1, h3 {
 .input-rocket:hover {
     background-color: #ffffff;
 }
-.visualizacao {
+.visualizacao-a{
     background-color: #FDDE34;
     border-color: #FDDE34;
     color: #2D3436;
@@ -97,7 +97,7 @@ h1, h3 {
         border-bottom: 1.5px solid #FDCB6E;
         
     }
-    .visualizacao {
+    .visualizacao-a {
         display: block;
         width: 80%;
         height: 50px;
