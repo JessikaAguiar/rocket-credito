@@ -22,7 +22,7 @@
       <b-container>
         <b-row>
           <b-col>
-            <b-card class="sem-bordas">
+            <b-card class="sem-borda">
               <div class="text-center mb-5">
                 <b-icon icon="hand-thumbs-up" animation="throb" font-scale="4" variant="info"></b-icon>
                 <h4 class="card-title">Simule sem Compromisso</h4>
@@ -36,7 +36,7 @@
             </b-card>
           </b-col>
           <b-col>
-            <b-card>
+            <b-card class="sem-borda">
               <div class="text-center mb-5">
                 <b-icon icon="file-earmark-check" animation="fade" font-scale="4" class ="yellow"></b-icon>
                 <h4 class="card-title">Preencha o formulário em poucos passos</h4>
@@ -50,7 +50,7 @@
             </b-card>
           </b-col>
           <b-col>
-            <b-card>
+            <b-card class="sem-borda">
               <div class="text-center mb-5">
                 <b-icon icon="arrow-clockwise" animation="spin" font-scale="4" class="green"></b-icon>
                 <h4 class="card-title">Aguarde a análise dos seus dados</h4>
@@ -63,7 +63,7 @@
             </b-card>
           </b-col>
           <b-col>
-            <b-card>
+            <b-card class="sem-borda">
               <div class="text-center mb-5">
                 <b-icon icon="pen" animation="cylon" font-scale="4" class="purple"></b-icon>
                 <h4 class="card-title">Assine o contrato e receba o dinheiro em sua conta</h4>
