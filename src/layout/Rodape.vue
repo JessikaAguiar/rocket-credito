@@ -83,8 +83,7 @@
                                                 <b-form-group id="input-group-3" label-for="input-3">
                                                     <b-form-textarea
                                                         id="textarea"
-                                                        v-model="text"
-                                                        placeholder="Sua mensagem.."
+                                                        placeholder="Sua mensagem."
                                                         rows="2"
                                                         max-rows="2"
                                                         class="input-rocket"
@@ -126,8 +125,9 @@ export default {
     data() {
         return {
             form: {
-            email: '',
-            name: '',
+                email: '',
+                name: '',
+               
             }
         }
     }
