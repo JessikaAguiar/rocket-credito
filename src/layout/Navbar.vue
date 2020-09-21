@@ -3,7 +3,7 @@
         <b-navbar toggleable="lg" fixed="top" type="dark" class="mb-5">
             <b-navbar-brand href="#"><img :src="require('../assets/img/logo.png')" class="img-fluid logo-nav"></b-navbar-brand>
 
-            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+            <b-navbar-toggle target="nav-collapse"> </b-navbar-toggle>
 
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav class="ml-auto">
