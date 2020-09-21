@@ -1,7 +1,8 @@
 <template>
     <b-container fluid="xg" class="mb-5">
         <b-navbar toggleable="lg" fixed="top" type="dark" class="mb-5">
-            <b-navbar-brand href="#"><img :src="require('../assets/img/logo.png')" class="img-fluid logo-nav"></b-navbar-brand>
+            <router-link to="/" class="navbar-brand">
+                <img :src="require('../assets/img/logo.png')" class="img-fluid logo-nav"></router-link>
 
             <b-navbar-toggle target="nav-collapse"> </b-navbar-toggle>
 
