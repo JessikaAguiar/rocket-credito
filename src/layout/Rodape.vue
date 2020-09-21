@@ -1,7 +1,7 @@
 <template>
     <b-container fluid="xl" class="rodape">
          <b-row class="text-center">
-            <b-col sm="4">
+            <b-col>
                 <div class="rocket-logo">
                     <a href="#inicio">
                         <span class="logo-footer"></span>
