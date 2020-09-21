@@ -81,6 +81,12 @@ h1, h3 {
 .input-rocket:hover {
     background-color: #ffffff;
 }
+.visualizacao {
+    background-color: #FDDE34;
+    border-color: #FDDE34;
+    color: #2D3436;
+}
+
 @media (max-width: 768px) {
     .navbar-dark .navbar-nav .nav-link {
         color: #ffffff;

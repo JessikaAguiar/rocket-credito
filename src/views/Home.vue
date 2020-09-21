@@ -17,6 +17,8 @@
       </b-container>
     </section>
 
+    <b-button class="visualizacao btn">SIMULE SEM COMPROMISSO</b-button>
+
     <section class="comofunciona mb-5">
       <h1 class="mb-5">Como Funciona?</h1>
       <b-container>
@@ -218,6 +220,9 @@ export default {
     background-color: #FDDE34;
     width: 100px;
   }
+  .visualizacao {
+    display: none;
+  }
   
   @media (max-width: 768px) {
       .img-conteudo {
@@ -227,7 +232,12 @@ export default {
       .resultados {
         display: none;
       }
-      
+      .visualizacao {
+        display: block;
+        width: 80%;
+        height: 50px;
+        margin-bottom: 30px;
+      }
     }
 
   
