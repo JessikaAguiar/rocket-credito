@@ -85,6 +85,7 @@ h1, h3 {
     background-color: #FDDE34;
     border-color: #FDDE34;
     color: #2D3436;
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -96,4 +97,12 @@ h1, h3 {
         border-bottom: 1.5px solid #FDCB6E;
         
     }
+    .visualizacao {
+        display: block;
+        width: 80%;
+        height: 50px;
+        margin-bottom: 30px;
+        margin-left: 10%;
+      }
+    
 }

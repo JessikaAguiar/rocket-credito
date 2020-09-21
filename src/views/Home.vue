@@ -220,9 +220,7 @@ export default {
     background-color: #FDDE34;
     width: 100px;
   }
-  .visualizacao {
-    display: none;
-  }
+  
   
   @media (max-width: 768px) {
       .img-conteudo {
@@ -232,12 +230,7 @@ export default {
       .resultados {
         display: none;
       }
-      .visualizacao {
-        display: block;
-        width: 80%;
-        height: 50px;
-        margin-bottom: 30px;
-      }
+      
     }
 
   
